@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fafafa;
+}
+
+header {
+  background: #6200ea;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  padding: 60px 20px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+
+.hero button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #ff4081;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+  background: #f50057;
+  transform: scale(1.1);
+}
+
+/* Collections */
+.collection {
+  padding: 40px 20px;
+}
+
+.collection h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 10px auto;
+  padding: 20px;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Interactive Box */
+#logoBox {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  margin: 20px auto;
+  background: steelblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+
+#logoBox.animate {
+  transform: rotate(360deg) scale(1.2);
+  background: limegreen;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
